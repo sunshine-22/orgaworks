@@ -1,0 +1,265 @@
+
+{% extends 'basic.html' %}
+{% load static %}
+{% block css1 %}
+<link rel="stylesheet" href="{% static 'css/pages/vegatable.css' %}">
+{% endblock css1 %}
+{% block css2 %}
+<link rel="stylesheet" href="{% static 'css/pages/productdescription.css' %}">
+{% endblock css2 %}
+{% block belowheader %}
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<div class="searchorga" style="background-image: url('static/images/background/background.png');     margin-top: -6%;
+    margin-bottom: -5%; ">
+        <form class=" example " action="{% url 'searchitems' %}" method="GET" value="{{request.GET.q}}">
+            <input type="text" placeholder="Search Orga Plants.." name="q" value="{{request.GET.q}}" style="    border: 1px solid gray;
+            border-right: none;">
+            <!-- <button type="submit"><i class="searchbtn fa fa-search"></i></button> -->
+            <button type="submit" style="border-radius:0px 15px 15px 0px ;border: 1px solid gray;
+            border-left: none;"  name="submit" value="Search"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+{%  endblock belowheader %}
+
+{% block content %}
+
+
+<div class="sectiontext">
+    <h2>{{linksdata.name}}</h2>
+</div>
+<div class="productdescription">
+   <div class="startdicdesc1">
+    <div class="startdivdesc2">
+        <img src="{% static 'images/desc/community.png' %}"alt="" srcset="">
+        <table>
+            <tr>
+                <th>Price</th>
+                <td>: Rs. {{communityfarm_data.price}}{{communityfarm_data1}} </td>
+
+
+            </tr>
+            <tr>
+                <th>Delivery</th>
+                <td>: 5 days</td>
+
+            </tr>
+
+        </table>
+        <ul style="display: flex;     margin-top: 12%;">
+            <!-- <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star" ></i></li> -->
+        </ul>
+        
+    </div>
+    <div class="form-group">
+        <button class="submitbton">
+            <span class="button_top"> <a href="{{linksdata.communityfarm}}" style="    text-decoration: none;
+                color: white;"  target="_blank">Buy</a>
+            </span>
+        </button>
+    </div>
+   </div>
+   <div class="startdicdesc1">
+    <div class="startdivdesc2">
+        <img src="{% static 'images/desc/desc.png' %}" alt="" srcset="">
+        <table>
+            <tr>
+                <th>Price</th>
+                <td>: Rs. {{healthybuddha_data.price}}{{healthybuddha_data1}}</td>
+
+
+            </tr>
+            <tr>
+                <th>Delivery</th>
+                <td>: 5 days</td>
+
+            </tr>
+
+        </table>
+        <ul style="display: flex;     margin-top: 12%;">
+            <!-- <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star" ></i></li> -->
+        </ul>
+        
+    </div>
+    <div class="form-group">
+        <button class="submitbton">
+            <span class="button_top"> <a href="{{linksdata.healthybuddha}}" style="    text-decoration: none;
+                color: white;"  target="_blank">Buy</a>
+            </span>
+        </button>
+    </div>
+   </div>
+   <div class="startdicdesc1">
+    <div class="startdivdesc2">
+        <img src="{% static 'images/desc/oragnic.png' %}" alt="" srcset="">
+        <table>
+            <tr>
+                <th>Price</th>
+                <td>: Rs. {{organiceraa_data.price}}{{organiceraa_data1}}</td>
+
+
+            </tr>
+            <tr>
+                <th>Delivery</th>
+                <td>: 5 days</td>
+
+            </tr>
+
+        </table>
+        <ul style="display: flex;     margin-top: 12%;">
+            <!-- <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star" ></i></li> -->
+        </ul>
+        
+    </div>
+    <div class="form-group">
+        <button class="submitbton">
+            <span class="button_top"><a href="{{linksdata.organiceraa}}" style="    text-decoration: none;
+                color: white;"  target="_blank">Buy</a>
+            </span>
+        </button>
+    </div>
+   </div>
+   <div class="startdicdesc1">
+    <div class="startdivdesc2"> 
+        <img src="{% static 'images/desc/greenda.png' %}"  alt="" srcset="">
+        <table>
+            <tr>
+                <th>Price</th>
+                <td>: Rs. {{greenda_data.price}}{{greenda_data1}}</td>
+
+
+            </tr>
+            <tr>
+                <th>Delivery</th>
+                <td>: 5 days</td>
+
+            </tr>
+
+        </table>
+        <ul style="display: flex;     margin-top: 12%;">
+            <!-- <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star checked" ></i></li>
+            <li><i class="fa fa-star" ></i></li> -->
+        </ul>
+        
+    </div>
+    <div class="form-group">
+        <button class="submitbton">
+            <span class="button_top">  <a href="{{linksdata.greendna}}" style="    text-decoration: none;
+                color: white;"  target="_blank">Buy</a>
+            </span>
+        </button>
+    </div>
+   </div>
+
+
+</div>
+<div class="belowproductdesc">
+    <img src='{% static "images/background/background.png" %}' alt="" srcset="">
+</div>  
+
+
+<div class="productreviews" style="margin-bottom:2%">
+    <div class="formstart form1" style="border-right: 1px solid black">
+
+        <form class="orgaform"  id="sabarish" method="POST">
+            <h5>Rate Us</h5>
+            <div class="rat"><ul style="display: flex;     margin-top: 12%;   list-style: none;">
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star" ></i></li>
+            </ul></div>
+            <h5 style="margin-top: 5%;">Write a review</h5>
+
+            <div class="form-group">
+                <input type="text" class="form-control"  placeholder="Name" name="name">
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control"  placeholder="Mail ID" name="email">
+            </div>
+            <div class="form-group">
+                <input type="hidden" class="form-control"  value={{proid}} name="productid">
+            </div>
+            <div class="form-group">
+
+                <textarea class="form-control" 
+                    placeholder="Kindly let us know about your thoughts here!" rows="3" name="desc"></textarea>
+            </div>
+
+            <div class="form-group">
+                {% csrf_token %}
+                <button class="submitbton" type="submit" name="reviewsubmit">
+                    <span class="button_top"> Submit
+                    </span>
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+    <div class="formstart form2">
+
+   
+        <form class="orgaform">
+            <h5>Average rating</h5>
+           <div class="rat">
+            <ul style="display: flex;     margin-top: 12%;   list-style: none;">
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star checked" ></i></li>
+                <li><i class="fa fa-star" ></i></li>
+            </ul>
+           </div>
+            <!-- <div class="form-group">
+                <button class="submitbton">
+                    <span class="button_top"> View Ratings
+                    </span>
+                </button>
+            </div> -->
+            {% for i in review %}
+            <hr style="color: black;">
+            <div class="form-group">
+    <label for="Name">{{i.name}}</label>
+    <h6 id="Name" class="Name">{{i.review}}</h6>
+            </div>
+            {% endfor %}
+        
+
+           
+            <div class="form-group">
+                <button class="submitbton">
+                    <span class="button_top"> Views Reviews
+                    </span>
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+
+<!-- {% include 'components/contact.html' %} -->
+{% include 'components/specialFooter.html' %}
+
+{%  endblock content %}
+

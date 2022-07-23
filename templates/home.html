@@ -1,0 +1,170 @@
+
+{% extends 'basic.html' %}
+{% load static %}
+{% block belowheader %}
+<style>
+@media only screen and (max-width: 765px){
+.searchorga {
+    margin-top: -3% !important;
+    margin-bottom: -10% !important;
+}
+
+}
+
+@media only screen and (max-width: 780px){
+.example {
+    padding: 57px;
+    padding-top: 17%;
+}}
+@media only screen and (max-width: 520px){
+.searchorga .example {
+    padding: 0px;
+    padding-top: 14%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}}
+@media only screen and (max-width: 780px){
+.sectiontext {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    margin-top: 10%;
+}
+.speacialClass{
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+    margin-top: 16%;
+}
+}
+</style>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/62d666ce7b967b11799a3b0a/1g8ao36ks';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+<div class="searchorga" style="background-image: url('static/images/background/background.png');">
+    <form class=" example " action="{% url 'searchitems' %}" method="GET" value="{{request.GET.q}}">
+        <input type="text" placeholder="Search Orga Plants.."  name="q" value="{{request.GET.q}}">
+        <!--<button type="submit"><i class="searchbtn fa fa-search"></i></button>-->
+        <button type="submit" style="border-radius:0px 15px 15px 0px ;"  name="submit" value="Search"><i class="searchbtn fa fa-search"></i></button>
+    </form>
+</div>
+
+{%  endblock belowheader %}
+
+{% block content %}
+<!-- vegetable section start -->
+<div class="sectiontext speacialClass" >
+    <h2 class="sectiontext_big">Vegetables</h2>
+</div>
+
+<div class="owlcrousalworking" >
+    <div class="sectionphoto owl-carousel owl-theme">
+        {% for item in item %}
+        {%  if item.category == "vegetables"  %}
+       <a href="{% url 'productdescription' item.id %}"  style="color:transparent;"> <div class="item">
+        <div class="borderline">
+            <img src="{{item.productlinkImage.url}}"  alt="">
+            
+        </div>
+        <h2 class="itemname">
+            {{item.name}}
+        </h2>
+    </div></a>
+        
+        {% endif %}
+        {% endfor %}
+      
+    </div>
+    <div>
+        <a href="{%  url 'vegetables' %}">
+        <button class="cta arrowbutton" >
+            <!-- <span class="hover-underline-animation"> Shop now </span> -->
+            <img src="{% static 'images/Vector.png' %}"  style="width: 15px;" alt="" srcset="">
+        </button>
+         </a>
+    </div>
+</div>
+<div class="sectiontext">
+    <h2 class="sectiontext_big">Fruits</h2>
+</div>
+
+<div class="owlcrousalworking" >
+    <div class="sectionphoto owl-carousel owl-theme">
+
+        {% for item in item %}
+        {%  if item.category == "Fruits"  %}
+       <a href="{% url 'productdescription' item.id %}"  style="color:transparent;"> <div class="item">
+        <div class="borderline">
+            <img src="{{item.productlinkImage.url}}"  alt="">
+            
+        </div>
+        <h2 class="itemname">
+            {{item.name}}
+        </h2>
+    </div></a>
+        
+        {% endif %}
+        {% endfor %}
+      
+    </div>
+    <div>
+        <a href="{% url 'fruits' %}">
+        <button class="cta arrowbutton" >
+            <!-- <span class="hover-underline-animation"> Shop now </span> -->
+            <img src="{% static 'images/Vector.png' %}"  style="width: 15px;" alt="" srcset="">
+        </button>
+         </a>
+    </div>
+</div>
+
+
+<div class="sectiontext">
+    <h2 class="sectiontext_big" style="color: 
+    #313232 !important;">Exotics</h2>
+</div>
+
+<div class="owlcrousalworking" >
+    <div class="sectionphoto owl-carousel owl-theme">
+
+       
+
+        {% for item in item %}
+{%  if item.category == "Exotics"  %}
+        <a href="{% url 'productdescription' item.id %}"style="color: transparent;"><div class="item">
+            <div class="borderline">
+                <img src="{{item.productlinkImage.url}}"  alt="">
+                
+            </div>
+            <h2 class="itemname">
+                {{item.name}}
+            </h2>
+        </div></a>
+        {% endif %}
+      {% endfor %}
+        
+    </div>
+    <div>
+        <a href="{% url 'exotic' %}"> <button class="cta arrowbutton">
+            <!-- <span class="hover-underline-animation"> Shop now </span> -->
+            <img src="{% static 'images/Vector.png' %}"  style="width: 15px;" alt="" srcset="">
+        </button></a>
+    </div>
+</div>
+
+<!-- vegetablesection end -->
+{% include 'components/contact.html' %}
+{% include 'components/homefooter.html' %}
+
+{%  endblock content %}
+

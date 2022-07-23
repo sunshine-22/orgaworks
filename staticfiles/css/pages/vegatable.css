@@ -1,0 +1,273 @@
+.vegicontent {
+    max-width: 25%;
+}
+
+
+.vegatabeItem {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 58px;
+    margin: 12%;
+    max-width: 100%;
+    /* background: aquamarine; */
+}
+
+
+.vegatablescontents {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.section_button{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+text-align: center;
+padding: 1%;
+border-radius: 16px;
+width: 50%;
+margin-left: 25%;
+}
+
+
+.sectiontext {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+   
+    margin-top: 2%;
+
+}
+
+
+
+/* middel section end */
+    @media only screen and (max-width:1200px) {
+        .vegicontent {
+            max-width: 33%;
+        }
+    } 
+    
+    @media only screen and (max-width:1000px) {
+        .iconpart{
+            margin: auto;
+            padding: 5px;
+        }
+    } 
+    
+    @media only screen and (max-width:965px) {
+      
+        .vegicontent {
+            max-width: 43%;
+        }
+    }
+    @media only screen and (max-width:838px) {
+        /* .vegicontent {
+            max-width: 33%;
+        } */
+        .home_icon {
+            position: absolute !important;
+            top: 69px !important;
+            right: 80px !important;
+        }
+    }
+
+    
+  @media only screen and (max-width:780px) {
+        .searchorga {
+            max-width: 84%;
+         
+        }.example {
+            padding: 57px;
+        }
+        .iconpart{
+            margin-left: 20%;}
+        .margin_icon{
+                margin-left: 5%;
+               
+        }
+        
+
+        
+    }
+    @media only screen and (max-width:765px){
+        
+    
+    .iconpart {
+        margin-left: 20% !important;
+        width: 70% !important;
+    }
+    .sectiontext {
+        display: flex;
+        justify-content: center;
+        margin: 12px;
+        margin-top: -4%;
+    }
+    .searchorga {   
+         margin-top: -11% !important;
+        margin-bottom: -10% !important;}
+
+}
+    @media only screen and (max-width:730px){
+        
+    
+        .vegicontent {
+            max-width: 49%;
+        }
+
+}
+    @media only screen and (max-width: 640px){
+        .vegicontent {
+            max-width: 73%;
+        }
+}
+  
+
+
+    
+    @media only screen and (max-width:520px) {
+        .searchorga {
+            max-width: 93%;
+            margin: auto;
+            height: 196px;
+        }
+        .iconpart{
+            margin-left: 20px;
+        }
+        .home_icon{
+        position: absolute !important;
+        top: 69px !important;
+        right: 50px !important;
+        }
+        .searchorga .example{
+        
+                padding: 0px;
+                padding-top: 6%;
+                display: flex;
+                margin: auto;
+                justify-content: center;
+            
+        }
+    }
+
+
+@media  screen and (max-width:470px) {
+    
+
+    .iconpart {
+        margin-left: 13% !important;
+        width: 20% !important;
+    }
+}
+
+
+@media only screen and (max-width: 420px){
+/* .vegicontent {
+    max-width: 100%;
+    margin: auto;
+} */
+.home_icon {
+    position: absolute !important;
+    top: 69px !important;
+    right: 36px !important;
+}
+}
+@media  screen and (max-width:400px) {
+    
+
+    .iconpart {
+    display: block !important;
+    padding-left: 8%;
+    }
+
+}
+
+
+
+
+    @media only screen and (max-width:360px) {
+        .searchorga {
+            max-width: 84%;
+         
+        }.example {
+            padding: 57px;
+        }
+        
+    }
+   
+    
+    @media only screen and (max-width: 500px){
+    .searchorga {
+        max-width: 93%;
+        margin: auto;
+        height: 159px;
+    }.example {
+        padding: 23px;
+    }form.example input[type=text] {
+        padding: 6px;
+        font-size: 17px;
+        float: left;
+        width: 75%;
+    
+    }form.example button {
+        float: left;
+        width: 10%;
+        padding: 6px;
+        
+    } .example {
+        padding: 52px;
+        padding-top: 14%;
+    }
+    .orgaform {
+        border-radius: 20px;
+        margin: auto;
+        max-width: 72%;
+    }
+    .footersection .iconpart i{
+        font-size: 25px !important;
+    }
+    .iconpart {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: inline-grid;
+    }
+    .iconpart div{
+        margin: 12px;
+    }
+    
+    }
+
+    @media only screen and (max-width: 450px){
+.vegicontent {
+    max-width: 94%;
+}}
+    @media only screen and (max-width: 340px){
+    .example {
+        padding: 14px;
+        padding-top: 16%;
+    }
+    .orgaform {
+       
+        margin: auto;
+        max-width: 84%;
+    }
+    form.example button {
+        float: left;
+        width: 12%;
+        padding: 6px;
+    }}
+    
+        /* form section start */
+        
+        /* form section end */

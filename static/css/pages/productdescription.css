@@ -1,0 +1,190 @@
+.checked {
+    color: orange;
+  }.productdescription li {
+    list-style: none;
+    margin: auto 2%;
+    font-size: 26px;
+}
+  .productdescription {
+    max-width: 79%;
+    /* background: aqua; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .productdescription button {
+    width: 118px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+  .productdescription button span {
+    border: none;
+    border-radius: 22px;
+    padding: 6px;
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+.startdivdesc2 {
+  max-width: 100%;
+  border: 2px solid black;
+  padding: 28px;
+  border-radius: 17px;
+  height: 299px;
+}
+.startdivdesc2 img {
+  max-width: 62%;
+  margin: auto;
+  display: flex;
+}
+.startdivdesc1{
+  max-width: 19%;
+    /* border: 1px solid gray; */
+}
+.productdescription table{
+  display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 16%;
+    font-size: 23px;
+
+}.startdicdesc1 {
+  max-width: 27%;
+  margin: 4% 10%;
+}
+.startdivdesc2 ul{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 9%;
+  margin-left: -24%;
+}
+.belowproductdesc
+{
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+
+}
+
+
+.productreviews .orgaform {
+  margin: auto;
+  max-width: 100%;
+  padding: 9%;
+  border: none;
+}
+.productreviews .formstart {
+  width: 100%;
+  /* margin-top: 30px; */
+  /* border: 2px solid; */
+  /* border-radius: 14px; */
+}
+.productreviews {
+  max-width: 85%;
+  margin: auto;
+  display: flex;
+  border: 2px solid black;
+  margin-top: 11%;
+  border-radius: 15px;
+}
+
+.productreviews ul{
+  margin: auto;
+  display: flex;
+  max-width: 50%;
+}.productreviews .orgaform li {
+  margin: auto 14.5%;
+  font-size: 32px;
+}
+.productreviews .button_top {
+  width: 162px;
+
+  padding: 8px;
+
+}
+.productreviews h5{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+}
+.productreviews label {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+.productreviews h5{
+  font-size: 21px;
+    font-weight: 600;
+}
+.rat{
+  display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+.rat ul{
+  display: flex;
+  margin-top: 12%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.belowproductdesc img{
+  max-width: 54%;
+  margin: auto;
+}
+@media only screen and (max-width:1150px){
+  .startdicdesc1 {
+    max-width: 37%;
+    margin: 4% 5%;
+}
+}
+@media  only screen and (max-width:740px) {
+  .productreviews {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    border: 2px solid black;
+    margin-top: 11%;
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+}
+@media only screen and (max-width: 800px){
+.startdicdesc1 {
+    max-width: 47%;
+    margin: 4% 5%;
+}
+.belowproductdesc img{
+  max-width: 80%;
+  margin: auto;
+}
+.productdescription {
+
+  justify-content: center;
+}
+}
+@media only screen and (max-width: 700px){
+.startdicdesc1 {
+    max-width: 60%;
+    margin: 4% 5%;
+}
+
+}
+@media only screen and (max-width: 520px){
+  .productdescription table {
+ 
+    margin-top: 16%;
+    font-size: 19px;
+}.startdicdesc1 {
+  max-width: 78%;
+  margin: 4% 5%;
+}
+}

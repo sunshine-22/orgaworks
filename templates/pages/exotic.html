@@ -1,0 +1,59 @@
+
+{% extends 'basic.html' %}
+{% load static %}
+{% block belowheader %}
+
+  
+    <div class="searchorga" style="    margin-top: -6%;
+    margin-bottom: -5%; ">
+        <form class=" example " action="{% url 'searchitems' %}" method="GET" value="{{request.GET.q}}">
+            <input type="text" placeholder="Search Orga Plants.."  name="q" value="{{request.GET.q}}" style="    border: 1px solid gray;
+            border-right: none;">
+            <!-- <button type="submit"><i class="searchbtn fa fa-search"></i></button> -->
+            <button type="submit" style="border-radius:0px 15px 15px 0px ;border: 1px solid gray;
+            border-left: none;"   name="submit" value="Search"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    {%  endblock belowheader %}
+
+    {% block content %}
+      <div class="vegatablescontents" style="margin-bottom: 12%;">
+        {% for item in item %}
+        {%  if item.category == "Exotics"    %}
+        <div class="vegicontent">
+
+            <div class="vegatabeItem">
+                <img src="{{item.productlinkImage.url}}"  alt="" srcset="" style="      max-width: 241px;
+                height: 176px;
+                ">
+                <h5>Best Price</h5>
+                <h3> {{item.lowest_prices}}</h3>
+                <div class="stars">
+                    <!-- <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i> -->
+                </div>
+
+            </div>
+            <h5 class="namevege sectiontext">
+             {{item.name}}
+            </h5>
+          
+
+            <a href="{% url 'productdescription' item.id %}"  >   <button class="section_button"> Explore 
+            </button></a>
+        </div>
+        {% endif %}
+        {% endfor %}
+       
+    </div>
+   
+
+    {% include 'components/specialFooter.html' %}
+    {%  endblock content %}
+    <!-- footer section start -->
+    <!-- footer section start -->
+    

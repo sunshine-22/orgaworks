@@ -1,0 +1,227 @@
+*{margin: 0;
+    padding: 0;}
+    html,body{
+        overflow-x: hidden ;
+        font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    
+    background: #F5F5F5;
+    }
+    /* header section start  */
+    header{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li {
+        list-style: none;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        height: 237px;
+        width: 233px;
+        margin-top: 2%;
+        
+    }
+    header ul{
+        display: contents;
+    }
+    .baricon{
+        /* position: absolute; */
+        /* top: 14%;
+        left: 13%; */
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .baricon i{
+        color: #313232;
+    }
+    .baricon i:hover{
+        text-shadow: 1px 1px 3px #313232;
+    }
+    
+    .sidebartext{
+        display: none;
+        position: absolute;
+        left: 13%;
+        top: 25%;
+        background: white;
+        color: black;
+        border: 2px solid black;
+        width: 160px;
+        border-radius: 15px;
+        font-weight: bold;
+        
+    }
+    .sidebartext ul li{
+        list-style: none;
+        padding: 8px;
+    }
+    
+    #closebtn{
+        display: none;
+    }
+    
+    .logo {
+        text-align: center;
+        /* max-width: 50%; */
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    he ul{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        display: contents;
+    
+    }
+    .logotext p{
+        font-size: 130%;
+        font-family: 'Poppins';
+        font-style: normal;
+    
+    
+    }
+    .address_icon{
+        margin-left: 5%;
+    
+    }
+    .plants{
+        color: rgb(67, 219, 67);
+    }
+    .searchorga {
+        max-width: 60%;
+        margin: auto;
+        height: 230px;
+        border-radius: 20px;
+    }
+    .example {
+    
+        padding: 87px;
+    
+    
+    }
+    .text{
+        max-height: 40px;
+    }
+    .searchbtn{
+        max-height: 40px;
+    
+    }
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid transparent;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        border-radius: 15px 0px 0px 15px;
+    
+      }
+      
+      /* Style the submit button */
+      form.example button {
+        float: left;
+        width: 10%;
+        padding: 10px;
+        background: #f1f1f1;
+        color: black;
+        font-size: 17px;
+        border: 1px solid transparent;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    
+      }
+      
+      form.example button:hover {
+        background: #0b7dda;
+      }
+      
+      /* Clear floats */
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    
+      .iconsafterstartuplogo{
+display: flex;
+      }
+      .iconsafterstartuplogo div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        margin: 0px 38px;
+      }
+    
+    .contactheading h2{
+        color: #313232;font-weight: 700; 
+         margin-top: 2% !important;
+    }
+     
+      @media only screen and (max-width:1430px) {
+        .searchorga {
+            max-width: 73%;
+           
+        }
+      }
+      @media only screen and (max-width: 1180px){
+        .owlcrousalworking {
+            max-width: 80% !important;
+        }} @media only screen and (max-width:800px) {
+        form.example button {
+         
+            padding: 3.1px;
+          
+        }
+      }
+      @media only screen and (max-width: 900px){
+       .copyright {    max-width: 100% !important;}
+       .iconsafterstartuplogo div{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        margin: 0px 7px;
+      }
+      }
+      @media only screen and (max-width: 900px){
+       .copyright {       display: block;}.iconsafterstartuplogo div {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        margin: 0px 26px;
+    }.iconsafterstartuplogo {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        margin-top: 4%;
+    }
+      }
+      @media only screen and (max-width:500px) {
+        form.example button {
+            float: left;
+            width: 10%;
+            padding: 0px !important;
+        }
+        form.example input[type=text] {
+            padding: 6.6px !important;
+            font-size: 17px;
+            float: left;
+            width: 69%;
+        }
+       
+        .searchorga {
+            margin: auto;
+            height: 187px;
+        }
+      }

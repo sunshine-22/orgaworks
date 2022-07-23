@@ -1,0 +1,417 @@
+.aboutuscontent {
+    border: 2px solid gray;
+    max-width: 90%;
+    margin: auto;
+    justify-content: center;
+    padding: 33px;
+    margin-top: 5%;
+    border-radius: 12px
+}
+
+.aboutuscontent h3 {
+    max-width: 89%;
+    margin: 4% auto;
+}
+
+.startedboxs {
+    border: 1px solid gray;
+    max-width: 48%;
+    padding: 29px;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.startedboxs h3 {
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.itemstarted ul li {
+    list-style: number;
+}
+
+.valueboxs {
+
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.valueboxstart {
+    max-width: 23%;
+    border: 2px solid gray;
+    padding: 41px;
+    height: auto;
+    border-radius: 12px;
+    margin: 4% 8%;
+}
+
+.valueboxstart h1 {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.valueboxstart p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.team {
+    max-width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 3% 11%;
+    justify-content: center;
+    margin-bottom: 12%;
+}
+
+
+.team img {
+    border-radius: 58%;
+    width: 50%;
+    margin: auto;
+}
+
+.team h5 {
+    font-weight: 600;
+    margin: auto;
+}
+
+.team h1 {
+    font-weight: 600;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+.teamsinfo {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.teamsinfo button {
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 83px;
+}
+
+@media only screen and (max-width: 1340px) {
+    .modal-dialog {
+        max-width: 76% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .valueboxstart {
+        max-width: 34%;
+
+    }
+
+    .modal-body img {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .modal-dialog {
+        max-width: 95% !important;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .team h1 {
+        font-weight: 600;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 21px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .team {
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: 2% 8%;
+        justify-content: center;
+        margin-bottom: 12%;
+    }
+
+    .team h5 {
+        font-weight: 600;
+        margin: auto;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .itemstarted {
+
+        max-width: 100% !important;
+
+    }
+
+    .itemstarted h2 {
+
+        font-size: 23px !important;
+
+
+
+    }
+
+    .itemstarted img {
+
+        max-width: 32% !important;
+        margin-left: 0% !important;
+
+    }
+
+    .aboutuscontent {
+        max-width: 97%;
+
+        padding: 6px;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-body {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 36px;
+    }
+
+    .modal-body .content {
+        max-width: 100%;
+        margin: auto;
+        margin-left: 7%;
+    }
+
+    .modal-body p {
+        font-size: 12px;
+    }
+
+    .modal-body {
+        padding: 14px;
+    }
+
+    .modal-body img {
+        width: 155px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-body h4 {
+        font-size: 18px;
+
+    }
+
+    .modal-body h5 {
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .modal-body .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .modal-body .content {
+        max-width: 58%;
+        margin: auto;
+        margin-left: 4%;
+    }
+
+    .modal-body p {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width:740px) {
+    .teamsinfo {
+
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team {
+        max-width: 44%;
+        display: flex;
+        flex-direction: column;
+        margin: 4% 8%;
+        justify-content: center;
+        margin-bottom: 12%;
+    }
+
+    .aboutuscontent h3 {
+        max-width: 89%;
+        margin: 4% auto;
+        font-size: 18px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    .valueboxstart {
+        max-width: 69%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .arrowbox {
+        max-width: 213px !important;
+
+    }
+
+    .itemstarted img {
+        max-width: 63% !important;
+        margin-left: 13% !important;
+    }
+
+    .itemstarted {
+        max-width: 100% !important;
+        margin: 24px auto !important;
+    }
+
+    .startedboxs {
+        border: 1px solid gray;
+        max-width: 70% !important;
+        padding: 24px;
+
+    }
+
+    .aboutuscontent h3 {
+
+        font-size: 18px;
+    }
+
+    .team {
+        max-width: 55%;
+
+        flex-direction: column;
+        margin: 7% 0%;
+        justify-content: center;
+        margin-bottom: 12%;
+    }
+}
+
+@media only screen and (max-width:532px) {
+    .whoare {
+        margin-top: 21%;
+        margin-bottom: 12%;
+
+    }
+
+}
+
+@media only screen and (max-width:510px) {
+    .itemstarted h2 {
+        font-size: 14px !important;
+    }
+
+    .valueboxstart p {
+
+        font-size: 17px;
+
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .startedboxs {
+
+        max-width: 70% !important;
+        padding: 5px;
+    }
+
+    .itemstarted .fa {
+        font-size: 21px;
+    }
+
+    .aboutuscontent h3 {
+        font-size: 13px;
+    }
+
+    .arrowbox {
+        max-width: 158px !important;
+    }
+
+    .team {
+        max-width: 84%;
+        margin: 7% 0%;
+        margin-bottom: 12%;
+    }
+
+    .valueboxstart h1 {
+
+        font-size: 25px;
+
+    }
+
+    .valueboxstart p {
+
+        font-size: 15px;
+
+    }
+
+    .whoarewe h2 {
+        font-size: 30px;
+    }
+
+    .modal-body .content {
+
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width:370px) {
+    .arrowbox {
+        max-width: 145px !important;
+    }
+
+    .team h1 {
+
+        font-size: 19px;
+
+    }
+
+    .aboutusheading h2 {
+        font-size: 34px;
+    }
+}

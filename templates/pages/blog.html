@@ -1,0 +1,55 @@
+
+
+
+{% extends "basic.html"  %}
+
+{% load static %}
+{% block css1 %}
+
+<link rel="stylesheet" href='{% static "css/pages/blogpage.css" %}'>
+
+{% endblock %}
+
+
+{% block content %}
+
+ 
+    <div class="headingblog">
+        <h1>Our Blog</h1>
+    </div>
+    <div class="blogpage">
+        {%  for item in getblogContent %}
+
+       
+           
+
+            <div class="card" style="background-image:url({{item.blogImage.url}}); background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover;"  >
+                <div class="card-img"></div>
+                <div class="card-info">
+                   
+                    <!-- <p class="text-title"> {{item.title}}</p> -->
+                    <p class="text-body"> {{item.title}}</p>
+                    <button class="card-button">
+                        <a href="{% url 'Blogdescription' item.id %}">Read more</a>
+
+                    </button>
+                </div>
+            </div>
+          {%  endfor %}
+       
+      
+       
+    </div>
+
+
+    <!-- footer section start -->
+
+    
+{% include 'components/contact.html' %}
+
+
+    {% include 'components/specialFooter.html' %}
+
+    {%  endblock %}

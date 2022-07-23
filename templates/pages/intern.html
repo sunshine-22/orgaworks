@@ -1,0 +1,111 @@
+
+
+
+{% extends "basic.html"  %}
+
+{% load static %}
+{% block css1 %}
+
+<link rel="stylesheet" href='{% static "css/pages/internpage.css" %}'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+{% endblock %}
+
+{% block content %}
+
+ 
+    <div class="headingblog">
+        <h1>Join Our Team</h1>
+        <h5 class="joinline mt-1">We're always on the lookout for new talent. Check out our current openings and apply today!</h5>
+    </div>
+    <div class="formstart">
+
+      <form class="orgaform" method="POST" id="empdet">
+          <center><label class="h3">Enter Employee Id</label></center>
+          <div class="form-group">
+              <input type="text" class="form-control" name="empid" placeholder="Emplyee Id">
+          </div>
+          <div class="form-group">
+            {% csrf_token%}
+              <button class="submitbton" type="submit" name="empsearch">
+                  <span class="button_top"> Submit
+                  </span>
+              </button>
+          </div>
+          <div class="form-group">
+            <label>{{employeename}}</label><br>
+            <label>{{employeeemail}}</label><br>
+            <label>{{employeelinkedin}}<a href={{linkedinlink}}>{{linkedinlink}}</a></label><br>
+            <label>{{employeerole}}</label><br>
+            <label>{{employeestatus}}</label><br>
+          </div>
+         
+          
+      </form>
+      <form class="orgaform"  method="POST" id="jobapply" style="display: none;" enctype="multipart/form-data">
+        <center><h2>Send Us Your Resume</h2></center>
+        <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+        </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="jobtitle" placeholder="Job Title" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="country" placeholder="Country" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="state" placeholder="State" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="postal" placeholder="Zip code" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="experience" placeholder="Experience in Years" required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="linkedin" placeholder="LinkedIn" required>
+      </div>
+      <div class="form-group">
+        <label>Upload Your Resume</label>
+        <input type="file" class="form-control" name="resume" placeholder="Upload Resume" required>
+      </div>
+      {% csrf_token %}
+        <div class="form-group">
+            <button class="submitbton" type="submit" name="apply">
+                <span class="button_top"> Submit
+                </span>
+            </button>
+        </div>
+    </form>
+      <div class="text-center mt-3">
+      <button class="btn btn-primary btn-center btn-lg" onclick="show()" id="applybtn">Apply Now!</button>
+    </div>
+    <div class="text-center">
+      <p>{{msg}}</p>
+    </div>
+  </div>
+
+  <script>
+    function show(){
+      var a=document.getElementById("empdet");
+      var b= document.getElementById("jobapply");
+      var c=document.getElementById("applybtn");
+      a.style.display="none";
+      b.style.display="block";
+      c.style.display="none";
+    }
+  </script>
+    <!-- footer section start -->
+
+   
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <div class="mt-5">
+    {% include 'components/specialFooter.html' %}
+  </div>
+    {%  endblock %}

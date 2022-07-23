@@ -1,0 +1,68 @@
+
+
+
+
+
+
+{% extends "basic.html"  %}
+
+{% load static %}
+{% block css1 %}
+<link rel="stylesheet" href="{% static 'css/pages/vegatable.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% if results %}
+<div class="sectiontext">
+    <h2>Result for  </h2>
+</div>
+
+<div class="vegatablescontents" style="margin-bottom: 12%;">
+    
+
+
+
+
+    {% for item in results %}
+   
+ 
+ <div class="vegicontent">
+
+            <div class="vegatabeItem">
+                <img src="{{item.productlinkImage.url}}"  alt="" srcset="" style="      max-width: 241px;
+                height: 176px;
+                ">
+                <h5>Best Price</h5>
+                <h3> {{item.lowest_prices}}</h3>
+                <div class="stars">
+                    <!-- <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i>
+                    <i class='fa fa-star'></i> -->
+                </div>
+
+            </div>
+            <h5 class="namevege sectiontext">
+             {{item.name}}
+            </h5>
+          
+
+            <a href="{% url 'productdescription' item.id %}"  >   <button class="section_button"> Explore 
+            </button></a>
+        </div>
+       
+
+
+    {% endfor %}
+   
+
+</div>{% else %}
+<h1 style="    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: 8%;">No Item Found</h1>
+  {% endif %}
+    {% include 'components/specialFooter.html' %}
+{%  endblock content %}

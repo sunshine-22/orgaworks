@@ -1,0 +1,25 @@
+{% extends "basic.html"  %}
+
+{% load static %}
+
+
+{% block content %}
+
+<div class="blogsContents" style="max-width: 90%;
+margin: auto;
+justify-content: center;
+padding: 17px;
+border: 1px solid gray;
+border-radius: 13px;">
+    {{getcontent.content|safe}}
+</div>
+
+
+
+
+{% include 'components/contact.html' %}
+
+
+    {% include 'components/specialFooter.html' %}
+
+    {%  endblock %}
