@@ -1,0 +1,21 @@
+branch-defaults:
+  main:
+    environment: node-express-env
+environment-defaults:
+  node-express-env:
+    branch: main
+    repository: ORGAPLANTS
+global:
+  application_name: orgaworks
+  branch: main
+  default_ec2_keyname: aws-eb
+  default_platform: Python 3.8 running on 64bit Amazon Linux 2
+  default_region: ap-south-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: eb-cli
+  repository: ORGAPLANTS
+  sc: git
+  workspace_type: Application

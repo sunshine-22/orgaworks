@@ -78,7 +78,7 @@ def productdescription(request,id):
         print(name,email,review,productid)
         review.objects.create(name=name,email=email,review=userreview,product=productid) 
     scrping_data  = products.objects.get(id=id)
-    googlesheet=pygsheets.authorize(service_file="C://ORGAPLANTS//orgaplants//Scripts//orgaworks//orga//key2.json")
+    googlesheet=pygsheets.authorize(service_file="C://ORGAPLANTS//Scripts//orgaworks//orga//key2.json")
     sheet=googlesheet.open_by_url("https://docs.google.com/spreadsheets/d/1F2mYp4vb1MSxXYst2HnZS_W-ZmeZ9M9tsWBwmUVJtYE/edit#gid=0")
     sheetdate=datetime.date.today()
     print("crosed")
