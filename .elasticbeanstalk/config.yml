@@ -1,4 +1,6 @@
 branch-defaults:
+  main:
+    environment: orgaworks-dev
   orgacommit-1:
     environment: orgaworks-dev
     group_suffix: null
