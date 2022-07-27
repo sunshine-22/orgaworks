@@ -98,19 +98,27 @@ def productdescription(request,id):
 
 
             else:
+                print("inelse")
                 sheetdata=pd.DataFrame()
                 sheetdata["PRODUCT"]=[scrping_data.name,]
                 communityfarm_data= communityfarm(scrping_data.communityfarm,"Onion")
+                print(communityfarm_data)
                 greenda_data= greenda(scrping_data.greendna,"Onion")
+                print(greenda_data)
                 healthybuddha_data= healthybuddha(scrping_data.healthybuddha,"Onion")
+                print(healthybuddha_data)
                 organiceraa_data= organiceraa(scrping_data.organiceraa,"Onion")
+                print(organiceraa_data)
                 sheetdata["Communityfarm"]=communityfarm_data.get("price")
                 sheetdata["Greenda"]=greenda_data["price"]
                 sheetdata["HealthyBuddha"]=healthybuddha_data["price"]
                 sheetdata["Organiceraa"]=organiceraa_data["price"]
-            
+                
                 sheetlist=sheetdata.values.tolist()
+                print(sheetlist)
                 foundsheet.append_table(values=sheetlist)
+                return render(request, 'pages/productdescription.html',{'communityfarm_data':communityfarm_data,'greenda_data':greenda_data,'healthybuddha_data':healthybuddha_data,
+                                                            'organiceraa_data':organiceraa_data,'linksdata':scrping_data,"proid":id,"review":rev})
             
     except:
         

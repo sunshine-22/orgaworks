@@ -54,7 +54,7 @@
     <!--End of Tawk.to Script-->
 <div class="searchorga" style="background-image: url('static/images/background/background.png');">
     <form class=" example " action="{% url 'searchitems' %}" method="GET" value="{{request.GET.q}}">
-        <input type="text" placeholder="Search Orga Plants.."  name="q" value="{{request.GET.q}}">
+        <input type="text" placeholder="Search for gifts from any plants"  name="q" value="{{request.GET.q}}">
         <!--<button type="submit"><i class="searchbtn fa fa-search"></i></button>-->
         <button type="submit" style="border-radius:0px 15px 15px 0px ;"  name="submit" value="Search"><i class="searchbtn fa fa-search"></i></button>
     </form>
@@ -74,7 +74,7 @@
         {%  if item.category == "vegetables"  %}
        <a href="{% url 'productdescription' item.id %}"  style="color:transparent;"> <div class="item">
         <div class="borderline">
-            <img src="{{item.productlinkImage.url}}"  alt="">
+            <img src="{{item.productlinkImage.url}}" width="300" height="300" alt="">
             
         </div>
         <h2 class="itemname">

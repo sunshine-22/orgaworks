@@ -23,9 +23,9 @@
         align-items: center;
     }
     .logo img {
-        height: 237px;
-        width: 233px;
-        margin-top: 2%;
+        height: 200px;
+        width: 200px;
+        margin-top: 0%;
         
     }
     header ul{
@@ -69,7 +69,7 @@
     
     .logo {
         text-align: center;
-        /* max-width: 50%; */
+        
         margin: auto;
         justify-content: center;
         align-items: center;
